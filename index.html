@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/syle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,22 +14,30 @@
 
 <body>
 
-<!-- HEADER -->
+<!-- NAV -->
 
-    <header class="header">
-        <h1 class="logo"><a href="./index.html">Creative</a></h1>
-        <nav id="navegador1">
-            <a href="./pages/nosotros.html" class="navup">NOSOTROS</a>
-            <a href="#servicios" class="navup">SERVICIOS</a>
-            <a href="./pages/clientes.html" class="navup">CLIENTES</a>
-            <a href="./pages/contacto.html" class="navup">CONTACTO</a>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Creative</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="./pages/nosotros.html">NOSOTROS</a>
+                    <a class="nav-link" href="#servicios">SERVICIOS</a>
+                    <a class="nav-link" href="./pages/clientes.html">CLIENTES</a>
+                    <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
 <!-- CUERPO -->
-    <main class="mainIndex">
-        <section id="presentacion">
-            <div class="presentacion__texto">
+<!-- presentacion -->
+    <main>
+        <section class="container-fluid presentacion">
+            <div class="presentacion-texto">
                 <h2>CONTENIDO 
                     <br>
                     CREATIVO
@@ -37,93 +46,98 @@
                 </div>        
         </section>
 
-        <section id="contactanos">
+<!-- contactanos -->
+
+        <section class="container-fluid contactanos">
             <img src="./img/iphone.png"alt="muestra">
-            <div class="contactanos__texto">
-                <h2>CONTACTANOS</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="row">
+                <div class="col-6 offset-6 contactanos-texto">
+                    <h2>CONTACTANOS</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
             </div>
         </section>
 
-<!-- SERVICIOS -->
-
+<!-- servicios -->
         <section id="servicios">
-            <h2>SERVICIOS</h2>
-        </section> 
-        <section id="card">   
-            <div class="card__servicio">
-                <div class="card__nombre">
-                    <img src="./img/comuni.png" alt="redes">
-                    <h4>COMUNIDAD</h4>
+            <section class="container-fluid servicios">
+                <h2>SERVICIOS</h2>
+            </section> 
+        
+            <section id="card">   
+                <div class="card__servicio">
+                    <div class="card__nombre">
+                        <img src="./img/comuni.png" alt="redes">
+                        <h4>COMUNIDAD</h4>
+                    </div>
+                    <hr>
+                    <div class="card__descripcion">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus provident quidem modi mollitia tenetur a inventore alias consequatur eaque aut quibusdam vel, repellat cum.</p>
+                    </div>    
                 </div>
-                <hr>
-                <div class="card__descripcion">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus provident quidem modi mollitia tenetur a inventore alias consequatur eaque aut quibusdam vel, repellat cum.</p>
-                </div>    
-            </div>
 
-            <div class="card__servicio">
-                <div class="card__nombre">
-                    <img src="./img/compras.png" alt="compra online">
-                    <h4>E-COMMERCE</h4>
+                <div class="card__servicio">
+                    <div class="card__nombre">
+                        <img src="./img/compras.png" alt="compra online">
+                        <h4>E-COMMERCE</h4>
+                    </div>
+                    <hr>
+                    <div class="card__descripcion">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus provident quidem modi mollitia tenetur a inventore alias consequatur eaque aut quibusdam vel, repellat cum.</p>
+                    </div>    
                 </div>
-                <hr>
-                <div class="card__descripcion">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus provident quidem modi mollitia tenetur a inventore alias consequatur eaque aut quibusdam vel, repellat cum.</p>
-                </div>    
-            </div>
 
-            <div class="card__servicio">
-                <div class="card__nombre">
-                    <img src="./img/camara.png" alt="fotografia">
-                    <h4>COBERTURA</h4>
+                <div class="card__servicio">
+                    <div class="card__nombre">
+                        <img src="./img/camara.png" alt="fotografia">
+                        <h4>COBERTURA</h4>
+                    </div>
+                    <hr>
+                    <div class="card__descripcion">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus provident quidem modi mollitia tenetur a inventore alias consequatur eaque aut quibusdam vel, repellat cum.</p>
+                    </div>    
                 </div>
-                <hr>
-                <div class="card__descripcion">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus provident quidem modi mollitia tenetur a inventore alias consequatur eaque aut quibusdam vel, repellat cum.</p>
-                </div>    
-            </div>
 
-            <div class="card__servicio">
-                <div class="card__nombre">
-                    <img src="./img/internet.png" alt="diseñoweb">
-                    <h4>DESARROLLO WEB</h4>
+                <div class="card__servicio">
+                    <div class="card__nombre">
+                        <img src="./img/internet.png" alt="diseñoweb">
+                        <h4>DESARROLLO WEB</h4>
+                    </div>
+                    <hr>
+                    <div class="card__descripcion">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus provident quidem modi mollitia tenetur a inventore alias consequatur eaque aut quibusdam vel, repellat cum.</p>
+                    </div>    
                 </div>
-                <hr>
-                <div class="card__descripcion">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus provident quidem modi mollitia tenetur a inventore alias consequatur eaque aut quibusdam vel, repellat cum.</p>
-                </div>    
-            </div>
+            </section>
         </section>
     </main>    
     
 <!--FOTTER-->
 
-    <footer id="footer">
-        <section> 
-            <h2><a href="./index.html">Creative</a></h2>
-            <nav id="nav2">
-                <ul>
-                    <li> <a href="./pages/nosotros.html" class="navdown">Nosotros</a></li>
-                    <li> <a href="#servicios" class="navdown">Servicios</a></li>
-                    <li> <a href="./pages/clientes.html" class="navdown">Clientes</a></li>
-                    <li> <a href="./pages/contacto.html" class="navdown">Contacto</a></li>
-                </ul>
-            </nav>
-        </section>
-
-        <section class="contactoredes"> 
-            <div class="contact">
-                <p>+54 9 11 ********</p>
-                <p>mail@gmail.com</p>
-            </div>
-            <div class="redes">
-                <a href="https://www.instagram.com/" target="_blank"><img src="./img/ig.png" alt="instagram"></a>
-                <a href="https://www.facebook.com/" target="_blank"><img src="./img/face.png" alt="facebook"></a> 
+    <footer class="container-fluid footer">
+        <section class="row">
+            <div class="col-6 nav">
+                <h2><a href="./index.html">Creative</a></h2>
+                <nav class="nav2">
+                    <a href="./pages/nosotros.html">Nosotros</a></li>
+                    <a href="#servicios">Servicios</a></li>
+                    <a href="./pages/clientes.html">Clientes</a></li>
+                    <a href="./pages/contacto.html">Contacto</a></li>
+                </nav>
+            </div> 
+            <div class="col-6 contactoredes">
+                <div class="contact">
+                    <p>+54 9 11 ********</p>
+                    <p>mail@gmail.com</p>
+                </div>
+                <div class="redes">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./img/ig.png" alt="instagram"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="./img/face.png" alt="facebook"></a> 
+                </div>
             </div>
         </section>
     </footer>
-    
+    <script src="./js/bootstrap.js"></script>
 </body>
 
 </html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/syle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,92 +14,94 @@
 
 <body>
 
- <!-- HEADER -->
-
-    <header class="header">
-        <h1 class="logo"><a href="../index.html">Creative</a></h1>
-        <nav id="navegador1">
-            <a href="./nosotros.html" class="navup">NOSOTROS</a>
-            <a href="../index.html#servicios" class="navup">SERVICIOS</a>
-            <a href="./clientes.html" class="navup">CLIENTES</a>
-            <a href="./contacto.html" class="navup">CONTACTO</a>
-        </nav>
-    </header>
-
-<!-- FORMULARIO CON <br> PROVISORIO HASTA SUMAR CSS-->
-    <main>
-        <section id="presentacion4">
-            <div class="presentacion4__texto">
-                <h2>CONTACTANOS</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <img src="../img/iphone.png"alt="muestra">
+ <!-- NAV -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Creative</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
+                    <a class="nav-link" href="../index.html#servicios">SERVICIOS</a>
+                    <a class="nav-link" href="./clientes.html">CLIENTES</a>
+                    <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                </div>
             </div>
-            
-            <div id="formulario">
-                <form>
-                    <label for="campo-nombre">Nombre y Apellido:</label>
-                    <input type="text" name="campo-nombre" id="campo-nombre" placeholder="Nombre y Apellido" required>
+        </div>
+    </nav>
 
-                    <br>
+<!-- FORMULARIO-->
+        <section class="container-fluid presentacion4">
+            <section class="row contacto">
+                <div class="col-6 presentacion4-texto">
+                    <h2>CONTACTANOS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <img src="../img/iphone.png"alt="muestra">
+                </div>
 
-                    <label for="campo-mail">Email:</label>
-                    <input type="email" name="campo-mail" id="campo-mail" placeholder="ejemplo@gmail.com" required>
-
-                    <br>
-
-                    <label for="campo-telefono">Teléfono</label>
-                    <input type="tel" name="campo-telefono" id="campo-telefono" required>
-
-                    <br>
-
-                    <label for="campo-servicio">Servicio a consultar</label>
-                        <select name="campo-servicio" id="campo-servicio">
-                            <option value="">Comunidad</option>
-                            <option value="">E-Commerce</option>
-                            <option value="">Cobertura</option>
-                            <option value="">Diseño Web</option>
+                <div class="col-4 offset-2 form">
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                            </div>
+                            <div class="col">
+                            <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Correo</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Servicio a consultar</option>
+                            <option value="1">Comunidad</option>
+                            <option value="2">E-Commerce</option>
+                            <option value="3">Cobertura</option>
+                            <option value="4">Desarrollo Web</option>
                         </select>
+                        <br>
+                        <div class="col-12">
+                            <button class="btn" type="submit">Enviar</button>
+                          </div>
+                    </form>
+                </div>
 
-                    <br>
 
-                    <input type="checkbox" name="no-soy-un-robot" id="no-soy-un-robot" value="No soy un robot">
-                    <label for="no-soy-un-robot">No soy un robot</label>
 
-                    <br>
-
-                    <input type="submit" name="enviar" id="enviar" value="Enviar">
-                    <input type="reset" name="borrar-datos" id="borrar-datos" value="Borrar datos">
-                </form>
-            </div>
+            </section>
+        
+           
          </section>
-
-    </main>
 
 <!-- FOOTER -->
 
-    <footer id="footer">
-        <section class="nav2">
-            <h2><a href="../index.html">Creative</a></h2>
-            <nav>
-                <ul>
-                    <li> <a href="./nosotros.html" class="navdown">Nosotros</a></li>
-                    <li> <a href="../index.html#servicios" class="navdown">Servicios</a></li>
-                    <li> <a href="./clientes.html" class="navdown">Clientes</a></li>
-                    <li> <a href="./contacto.html" class="navdown">Contacto</a></li>
-                </ul>
-            </nav>
-        </section>
-
-        <section class="contactoredes">  
-            <div class="contact">
-                <p>+54 9 11 ********</p>
-                <p>mail@gmail.com</p>
-            </div>
+    <footer class="container-fluid footer">
+        <section class="row">
+            <div class="col-6 nav">
+                <h2><a href="../index.html">Creative</a></h2>
+                <nav class="nav2">
+                    <a href="./nosotros.html">Nosotros</a></li>
+                    <a href="../index.html#servicios">Servicios</a></li>
+                    <a href="./clientes.html">Clientes</a></li>
+                    <a href="./contacto.html">Contacto</a></li>
+                </nav>
+            </div> 
+            <div class="col-6 contactoredes">
+                <div class="contact">
+                    <p>+54 9 11 ********</p>
+                    <p>mail@gmail.com</p>
+                </div>
             <div class="redes">
-                <a href="https://www.instagram.com/" target="_blank"><img src="../img/ig.png" alt="instagram"></a>
-                <a href="https://www.facebook.com/" target="_blank"><img src="../img/face.png" alt="facebook"></a> 
+             <a href="https://www.instagram.com/" target="_blank"><img src="../img/ig.png" alt="instagram"></a>
+             <a href="https://www.facebook.com/" target="_blank"><img src="../img/face.png" alt="facebook"></a> 
+            </div>
             </div>
         </section>
     </footer>
+    <script src="../js/bootstrap.js"></script>
+    
 </body>
 </html>

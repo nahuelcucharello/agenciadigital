@@ -8,107 +8,72 @@ body{
     background-color: rgb(15, 14, 14);
 }
 
-/* HEADER */
-
-header{
-    display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: 7vh;
-    grid-template-areas:"h1 nav";
-
-    background-color: rgba(0, 0, 0, 0.093);
-    color: white;
-    position: sticky;
-    top: 0%;
-    z-index: 2;
-    align-content: center;
-    align-items: center;
+main{
+    height: 2490px;
 }
 
-h1 a{
-    background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+/* HEADER */
+
+nav.navbar{
+    background-color:rgba(0, 0, 0, 0.097);
+    height: 7vh;
+}
+
+a.navbar-brand{
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    display: inline;
-    text-align: left;
-    text-decoration: none;
-    margin-left: 20px;
-    width: 100px; height: 20px;
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
-    font-weight:600;
-    grid-area: h1;
+    font-weight: 600;
+    text-decoration: none;
 }
 
-
-#navegador1{
+a.nav-link{
+    color: rgb(109, 105, 105);
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3rem;
     font-weight: 500;
-    grid-area: nav;
-    text-align: right;
-    margin-right: 20px;
-}
-
-.navup{
     text-decoration: none;
-    list-style: none;
-    color: rgb(109, 105, 105);
-    display: inline-block;
-    text-align: right;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
-.navup:hover{
-    background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+a.nav-link:hover{
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-                                                      /* DISEÑO INDEX */
 
-.mainIndex{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(3, 830px);
-    grid-template-areas:
-    "presentacion"
-    "contactanos"
-    "servicios";
-}
+
+                                                      /* DISEÑO INDEX */
 
 
 /* Presentanción */
 
-#presentacion {
-    width: 100% ; height: 830px;
+.presentacion{
+    height: 830px;
     background-image:url(../img/imac2.png);
     background-size: 100% auto;
     color: white;
-    grid-area: presentacion;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: 830px;
-    grid-template-areas: "presentacion_texto img";
 }
 
-.presentacion__texto {
+.presentacion-texto {
     width: 40vw; height: 50vh;
-    padding: 30px 20px 30px;
-    display: block;
-    grid-area: presentacion_texto;
-    transform: translate(30px, 250px);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 30px;
+    top: 250px;
 }
 
-.presentacion__texto h2 {
+.presentacion-texto h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 4.5rem;
 }
 
-.presentacion__texto p{
+.presentacion-texto p{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 1.2rem;
@@ -116,61 +81,60 @@ h1 a{
 
 /* Más info */
 
-#contactanos {
-    width: 100% auto; height: 830px;
-    background-color: rgb(223, 222, 222);
-    background-size: 100% auto;
-    grid-area: contactanos;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: 830px;
-    grid-template-areas: "img contactanos_texto";
+.contactanos {
+    height: 830px;
+    background-color: rgb(223, 222, 222);   
 }
 
-#contactanos img{
+.contactanos img{
     width: 900px; height: 900px;
-    transform: translate(-150px,50px);
-    grid-area: img;
+    position: relative;
+    left: -150px;
+    top: 50px;
 }
 
-.contactanos__texto {
-    width: 500px;
-    display: block;
-    grid-area: contactanos_texto;
+.contactanos-texto {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-
+    position: relative;
+    bottom: 500px;   
 }
 
-.contactanos__texto h2 {
+.contactanos-texto h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 4.5rem;
     text-align: center;
     color: rgb(52, 52, 52);
-    transform: translate(40px,370px);
+    position: relative;
 }
 
-.contactanos__texto p{
+.contactanos-texto p{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 1.2rem;
     text-align: center;
     color: rgb(74, 74, 74);
-    transform: translate(90px,370px);
+    position: relative;
 }
 
 /* Servicios */
 
- #servicios {
-    width: 100% auto; height: 830px;
-    background-color: rgb(232, 230, 230);
-    background-size: 100% auto;
-    grid-area: servicios;
+#servicios{
+    height: 830px;
+    width: 100%;
 }
 
-#servicios h2{
+.servicios {
+    height: 830px;
+    background-color: rgb(232, 230, 230);
+}
+
+.servicios h2{
     text-align: center;
-    transform: translate(0px,130px);
+    position: relative;
+    top: 120px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 4.5rem;
@@ -184,7 +148,7 @@ h1 a{
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
-    bottom: 500px;
+    bottom: 550px;
     color: rgb(74, 74, 74);
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -203,7 +167,8 @@ h1 a{
 }
 
 .card__servicio:hover{
-    box-shadow: 1px 1px 1px 2px #8ec5fc;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
 }
 
 .card__servicio hr{
@@ -238,63 +203,50 @@ h1 a{
                                                       /* DISEÑO "NOSOTROS" */
 
 
-.mainNosotros{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(3, 764px);
-    grid-template-areas:
-    "presentacion2"
-    "persona1"
-    "persona2";
-}
 
-#presentacion2 {
-    width: 100% auto; height: 764px;
+.presentacion2 {
+    height: 830px;
     background-color: rgb(223, 222, 222);
-    background-size: 100% auto;
-    grid-area: presentacion2;
 }
 
-.presentacion2__texto h2 {
+.presentacion2-texto{
+    position: relative;
+    top: 300px;
+}
+
+.presentacion2-texto h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    font-size: 4.5rem;
+    font-size: 5rem;
     text-align: center;
-    position: relative;
-    top: 250px;
     color: rgb(52, 52, 52);
 }
 
-.presentacion2__texto p{
+.presentacion2-texto p{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 2.2rem;
     text-align: center;
-    position: relative;
-    top: 300px;
     color: rgb(74, 74, 74);
 }
 
-#persona1 {
-    width: 100% auto; height: 764px;
+.persona1 {
+    height: 830px;
     background-color: rgb(255, 255, 255);
-    background-size: 100% auto;
-    grid-area: persona1;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: 764px;
-    grid-template-areas: "foto1 nombre1";
 }
 
 .foto1 img{
-    width: 594px; height: 100%;
-    grid-area: foto1;
-    align-content: center;
+    width: 594.5px; height: 100%;
 }
 
 .nombre1{
-    grid-area: nombre1;
     width: 590px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 20px;
+    top: 250px;
 }
 
 .nombre1 h3{
@@ -303,9 +255,6 @@ h1 a{
     font-weight: 800;
     font-size: 4.5rem;
     color: rgb(52, 52, 52);
-    position: relative;
-    top: 140px;
-    left: 20px;
 }
 
 .nombre1 p{
@@ -313,31 +262,28 @@ h1 a{
     font-weight: 400;
     font-size: 1.2rem;
     text-align: left;
-    position: relative;
     color: rgb(74, 74, 74);
-    top: 150px;
-    left: 20px;
 }
 
-#persona2 {
-    width: 100% auto; height: 764px;
+.persona2 {
+    height: 830px;
     background-color: rgb(255, 255, 255);
-    background-size: 100% auto;
-    grid-area: persona2;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: 764px;
-    grid-template-areas: "nombre2 foto2";
 }
 
 .foto2 img{
-    width: 650px; height: 764px;
-    grid-area: foto2;
+    width: 700px; height: 830px;
+    position: relative;
+    left: 120px;
 }
 
 .nombre2{
     width: 590px;
-    grid-area: nombre2;
+    height: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 50px;
+    top: 250px;
 }
 
 .nombre2 h3{
@@ -346,9 +292,6 @@ h1 a{
     font-weight: 800;
     font-size: 4.5rem;
     color: rgb(52, 52, 52);
-    position: relative;
-    top: 140px;
-    left: 50px;
 }
 
 .nombre2 p{
@@ -356,158 +299,162 @@ h1 a{
     font-weight: 400;
     font-size: 1.2rem;
     text-align: left;
-    position: relative;
     color: rgb(74, 74, 74);
-    top: 150px;
-    left: 50px;
 }
 
                                                       /* DISEÑO "CLIENTES" */
 
-#presentacion3 {
-    width: 100% auto; height: 810px;
-    background-color: rgb(0, 0, 0);
-    background-size: 100% auto;
+.presentacion3 {
+    height: 830px;
+    background-color: rgb(11, 11, 11);
 }
 
-.presentacion3__texto h2 {
+.presentacion3-texto{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    top: 200px;
+    color:rgb(255, 255, 255) ;
+
+}
+
+.presentacion3-texto h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 4.5rem;
-    text-align: center;
-    position: relative;
-    top: 100px;
-    color: rgb(255, 255, 255);
 }
 
-.presentacion3__texto p{
+.presentacion3-texto p{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 1.2rem;
-    text-align: center;
+}
+
+.clientes {
     position: relative;
-    top: 130px;
-    color: rgb(255, 255, 255);
+    top: 300px;
 }
 
 .logosclientes img{
-    display: inline block;
     width: 100px; height: 100px;
-    margin-left: 50px;
-    margin-right: 50px;
-    position: relative;
-    top: 300px;
-    left: 100px;
 }
 
                                                       /* DISEÑO "CONTACTO" */
 
-#presentacion4 {
-    width: 100% auto; height: 810px;
-    background-color: rgb(0, 0, 0);
-    background-size: 100% auto;
+.presentacion4 {
+    height: 830px;
+    background-color: rgb(11, 11, 11);
 }
 
-#presentacion4 img{
+.presentacion4 img{
     width: 700px; height: 700px;
     position: relative;
     right: 70px;
-    top: 20px;
+    bottom: 300px;
+    z-index: -1;
 }
 
-.presentacion4__texto h2 {
+.presentacion4-texto{
+    width: 600px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 300px;
+    left: 50px;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+
+.presentacion4-texto h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 3rem;
-    text-align: left;
-    position: relative;
-    top: 100px;
-    left: 50px;
     color: rgb(255, 255, 255);
-    z-index: 1;
 }
 
-.presentacion4__texto p{
+.presentacion4-texto p{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 1.2rem;
-    text-align: left;
-    position: relative;
-    top: 130px;
-    left: 50px;
     color: rgb(255, 255, 255);
-    z-index: 1;
 }
 
-#formulario form{
+.form{
     position: relative;
-    bottom: 450px;
-    left: 900px;
+    top: 300px;
+    color: white;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.btn{
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
+.contacto {
+    height: 600px;
+}
 
 /* FOOTER */
 
-footer{
+.footer{
     background-color: rgb(0, 0, 0);
     color: white;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: 30vh;
-    grid-template-areas: "nav2 contactoredes";
+    height: 30vh;
 }
 
-.nav2{
-    width: 400px; height: 20vh;
-    grid-area: nav2;
-}
-
-#footer h2 a{
+.nav h2 a{
     text-decoration: none;
     list-style: none;
-    color: white;
-    display: block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: left;
     line-height: 2rem;
     position: relative;
     top: 20px;
     left: 85px;
-    width: 100px; height: 20px;
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     font-weight:600;
 }
 
-#footer .navdown{
+.nav2 a{
     text-decoration: none;
-    list-style: none;
     color: white;
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-align: left;
     line-height: 2rem;
     position: relative;
-    top: 60px;
-    left: 90px;
+    top: 70px;
+    right: 47px;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     font-weight:400;
 }
 
+.nav2 a:hover{
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .contactoredes{
-    grid-area: contactoredes;
     position: relative;
     text-align: end;
     align-content: center;
-}
-
-.redes{
-    position: relative;
-    top: 120px;
-    right: 90px;
+    top: 70px;
+    right: 85px;
 }
 
 .redes img {
@@ -519,6 +466,6 @@ footer{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     font-weight:400;
-    top: 110px;
-    right: 90px;
 }
+
+

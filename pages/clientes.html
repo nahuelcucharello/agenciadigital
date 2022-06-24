@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/syle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,64 +14,80 @@
 
 <body>
 
- <!-- HEADER -->
-
-    <header class="header">
-        <h1 class="logo"><a href="../index.html">Creative</a></h1>
-        <nav id="navegador1">
-            <a href="./nosotros.html" class="navup">NOSOTROS</a>
-            <a href="../index.html#servicios" class="navup">SERVICIOS</a>
-            <a href="./clientes.html" class="navup">CLIENTES</a>
-            <a href="./contacto.html" class="navup">CONTACTO</a>
-        </nav>
-    </header>
+ <!-- NAV -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Creative</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
+                    <a class="nav-link" href="../index.html#servicios">SERVICIOS</a>
+                    <a class="nav-link" href="./clientes.html">CLIENTES</a>
+                    <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                </div>
+            </div>
+        </div>
+    </nav>
     
 <!-- CUERPO -->
 
-    <main>
-        <section id="presentacion3">
-            <div class="presentacion3__texto">
+        <section class="container-fluid presentacion3">
+            <div class="presentacion3-texto">
                 <h2>NUESTROS CLIENTES</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-            <div class="logosclientes">
-                <img src="../img/logo.png" alt="cliente">
-                <img src="../img/logo.png" alt="cliente">
-                <img src="../img/logo.png" alt="cliente">
-                <img src="../img/logo.png" alt="cliente">
-                <img src="../img/logo.png" alt="cliente">
-                <img src="../img/logo.png" alt="cliente">
-            </div>
+            <section class="row clientes">
+                <div class="col-2 d-flex justify-content-center logosclientes">
+                    <img src="../img/logo.png" alt="cliente">
+                </div>
+                <div class="col-2 d-flex justify-content-center logosclientes">
+                    <img src="../img/logo.png" alt="cliente">
+                </div>
+                <div class="col-2 d-flex justify-content-center logosclientes">
+                    <img src="../img/logo.png" alt="cliente">
+                </div>
+                <div class="col-2 d-flex justify-content-center logosclientes">
+                    <img src="../img/logo.png" alt="cliente">
+                </div>
+                <div class="col-2 d-flex justify-content-center logosclientes">
+                    <img src="../img/logo.png" alt="cliente">
+                </div>
+                <div class="col-2 d-flex justify-content-center logosclientes">
+                    <img src="../img/logo.png" alt="cliente">
+                </div>
+            </section>
         </section>
 
-    </main>
 
- <!--FOTTER-->
+<!--FOTTER-->   
 
-    <footer id="footer">
-        <section class="nav2">
-            <h2><a href="../index.html">Creative</a></h2>
-            <nav>
-                <ul>
-                    <li> <a href="./nosotros.html" class="navdown">Nosotros</a></li>
-                    <li> <a href="../index.html#servicios" class="navdown">Servicios</a></li>
-                    <li> <a href="./clientes.html" class="navdown">Clientes</a></li>
-                    <li> <a href="./contacto.html" class="navdown">Contacto</a></li>
-                </ul>
-            </nav>
-        </section>
-
-        <section class="contactoredes">  
-            <div class="contact">
-                <p>+54 9 11 ********</p>
-                <p>mail@gmail.com</p>
-            </div>
+    <footer class="container-fluid footer">
+        <section class="row">
+            <div class="col-6 nav">
+                <h2><a href="../index.html">Creative</a></h2>
+                <nav class="nav2">
+                    <a href="./nosotros.html">Nosotros</a></li>
+                    <a href="../index.html#servicios">Servicios</a></li>
+                    <a href="./clientes.html">Clientes</a></li>
+                    <a href="./contacto.html">Contacto</a></li>
+                </nav>
+            </div> 
+            <div class="col-6 contactoredes">
+                <div class="contact">
+                    <p>+54 9 11 ********</p>
+                    <p>mail@gmail.com</p>
+                </div>
             <div class="redes">
-                <a href="https://www.instagram.com/" target="_blank"><img src="../img/ig.png" alt="instagram"></a>
-                <a href="https://www.facebook.com/" target="_blank"><img src="../img/face.png" alt="facebook"></a> 
+             <a href="https://www.instagram.com/" target="_blank"><img src="../img/ig.png" alt="instagram"></a>
+             <a href="https://www.facebook.com/" target="_blank"><img src="../img/face.png" alt="facebook"></a> 
+            </div>
             </div>
         </section>
     </footer>
+    <script src="../js/bootstrap.js"></script>
     
 </body>
 
