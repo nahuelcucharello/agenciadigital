@@ -16,14 +16,14 @@
 
 <!-- NAV -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top contenedornav">
+        <div class="container-fluid nav-header">
             <a class="navbar-brand" href="./index.html">Creative</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
+                <div class="navbar-nav ms-auto">
                     <a class="nav-link" href="./pages/nosotros.html">NOSOTROS</a>
                     <a class="nav-link" href="#servicios">SERVICIOS</a>
                     <a class="nav-link" href="./pages/clientes.html">CLIENTES</a>
@@ -35,14 +35,14 @@
 
 <!-- CUERPO -->
 <!-- presentacion -->
-    <main>
+    <main class="container-fluid main">
         <section class="container-fluid presentacion">
             <div class="presentacion-texto">
                 <h2>CONTENIDO 
                     <br>
                     CREATIVO
                 </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<p> 
+                <p>Toda marca merece su presencia en redes sociales. Juntos hagamos crecer tu negocio.<p> 
                 </div>        
         </section>
 
@@ -50,11 +50,9 @@
 
         <section class="container-fluid contactanos">
             <img src="./img/iphone.png"alt="muestra">
-            <div class="row">
-                <div class="col-6 offset-6 contactanos-texto">
+            <div class="row contactanos-texto">
                     <h2>CONTACTANOS</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
+                    <p>Cada proyecto es único y cada cliente también.</p>
             </div>
         </section>
 
@@ -72,7 +70,7 @@
                     </div>
                     <hr>
                     <div class="card__descripcion">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus provident quidem modi mollitia tenetur a inventore alias consequatur eaque aut quibusdam vel, repellat cum.</p>
+                        <p>Administramos tus redes sociales y segmentamos tu publico objetivo.</p>
                     </div>    
                 </div>
 
@@ -83,7 +81,7 @@
                     </div>
                     <hr>
                     <div class="card__descripcion">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus provident quidem modi mollitia tenetur a inventore alias consequatur eaque aut quibusdam vel, repellat cum.</p>
+                        <p>Diseñamos tiendas online integradas a medios de pago y autoadministrables.</p>
                     </div>    
                 </div>
 
@@ -94,7 +92,7 @@
                     </div>
                     <hr>
                     <div class="card__descripcion">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus provident quidem modi mollitia tenetur a inventore alias consequatur eaque aut quibusdam vel, repellat cum.</p>
+                        <p>Retratamos los momentos únicos de cada evento.</p>
                     </div>    
                 </div>
 
@@ -105,7 +103,7 @@
                     </div>
                     <hr>
                     <div class="card__descripcion">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus provident quidem modi mollitia tenetur a inventore alias consequatur eaque aut quibusdam vel, repellat cum.</p>
+                        <p>Diseñamos sitios web atractivos, responsive, rápidos y autoadministrables.</p>
                     </div>    
                 </div>
             </section>
@@ -116,25 +114,27 @@
 
     <footer class="container-fluid footer">
         <section class="row">
-            <div class="col-6 nav">
-                <h2><a href="./index.html">Creative</a></h2>
-                <nav class="nav2">
-                    <a href="./pages/nosotros.html">Nosotros</a></li>
-                    <a href="#servicios">Servicios</a></li>
-                    <a href="./pages/clientes.html">Clientes</a></li>
-                    <a href="./pages/contacto.html">Contacto</a></li>
-                </nav>
+            <div class="col 12 rowfooter">
+                <div class="nav">
+                    <h2><a href="./index.html">Creative</a></h2>
+                    <nav class="nav2">
+                        <a href="./pages/nosotros.html">Nosotros</a></li>
+                        <a href="#servicios">Servicios</a></li>
+                        <a href="./pages/clientes.html">Clientes</a></li>
+                        <a href="./pages/contacto.html">Contacto</a></li>
+                    </nav>
+                </div>
+                <div class="contactoredes"> 
+                    <div class="contact">
+                        <p>+54 9 11 ********</p>
+                        <p>mail@gmail.com</p>
+                    </div>
+                    <div class="redes">
+                        <a href="https://www.instagram.com/" target="_blank"><img src="./img/ig.png" alt="instagram"></a>
+                        <a href="https://www.facebook.com/" target="_blank"><img src="./img/face.png" alt="facebook"></a> 
+                    </div>
+                </div>
             </div> 
-            <div class="col-6 contactoredes">
-                <div class="contact">
-                    <p>+54 9 11 ********</p>
-                    <p>mail@gmail.com</p>
-                </div>
-                <div class="redes">
-                    <a href="https://www.instagram.com/" target="_blank"><img src="./img/ig.png" alt="instagram"></a>
-                    <a href="https://www.facebook.com/" target="_blank"><img src="./img/face.png" alt="facebook"></a> 
-                </div>
-            </div>
         </section>
     </footer>
     <script src="./js/bootstrap.js"></script>

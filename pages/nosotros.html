@@ -15,14 +15,14 @@
 <body>
 
  <!-- NAV -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top contenedornav">
+        <div class="container-fluid nav-header">
             <a class="navbar-brand" href="../index.html">Creative</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
+                <div class="navbar-nav ms-auto">
                     <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
                     <a class="nav-link" href="../index.html#servicios">SERVICIOS</a>
                     <a class="nav-link" href="./clientes.html">CLIENTES</a>
@@ -34,42 +34,37 @@
 
  <!-- CUERPO -->
 
-    <main>
+    <main class="container-fluid main">
         <section class="container-fluid presentacion2">
             <div class="presentacion2-texto">
                 <h2>NOSOTROS</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Conocé al equipo de Creative.</p>
             </div>
         </section>
 
-        <section class="container-fluid persona1">
-            <section class="row persona1">
-                <div class="col-6 foto1">
-                    <img src="../img/silueta1.jpg" alt="persona1"> 
+        <section class="container-fluid personas">
+            <section class="persona1">
+                <div class="foto1">
+                    <img src="../img/siluetacolor4.jpeg" alt="persona1"> 
                 </div>
-                <div class="col-6 nombre1">
+                <div class="nombre1">
                     <h3>NAHUEL</h3>
                     <h3>COMMUNITY
                         <br>
                         MANAGER
                     </h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                 </div>
             </section>
-        </section>
-
-        <section class="container-fluid persona2">
-            <section class="row persona2">
-                <div class="col-6 nombre2">
+            <section class="persona2">
+                <div class="nombre2">
                     <h3>STEPHANIE</h3>
                     <h3>CONTENT 
                         <br>
                         CREATOR
                     </h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div class="col-6 foto2">
-                    <img src="../img/silueta3.jpg" alt="persona2">
+                <div class="foto2">
+                    <img src="../img/siluetacolor3.jpeg" alt="persona2">
                 </div>
             </section>
         </section>
@@ -77,27 +72,29 @@
 
  <!--FOTTER-->   
 
-    <footer class="container-fluid footer">
+   <footer class="container-fluid footer">
         <section class="row">
-            <div class="col-6 nav">
-                <h2><a href="../index.html">Creative</a></h2>
-                <nav class="nav2">
-                    <a href="./nosotros.html">Nosotros</a></li>
-                    <a href="../index.html#servicios">Servicios</a></li>
-                    <a href="./clientes.html">Clientes</a></li>
-                    <a href="./contacto.html">Contacto</a></li>
-                </nav>
-            </div> 
-            <div class="col-6 contactoredes">
-                <div class="contact">
-                    <p>+54 9 11 ********</p>
-                    <p>mail@gmail.com</p>
+            <div class="col 12 rowfooter">
+                <div class="nav">
+                    <h2><a href="../index.html">Creative</a></h2>
+                    <nav class="nav2">
+                        <a href="./nosotros.html">Nosotros</a></li>
+                        <a href="../index.html#servicios">Servicios</a></li>
+                        <a href="./clientes.html">Clientes</a></li>
+                        <a href="./contacto.html">Contacto</a></li>
+                    </nav>
                 </div>
-            <div class="redes">
-             <a href="https://www.instagram.com/" target="_blank"><img src="../img/ig.png" alt="instagram"></a>
-             <a href="https://www.facebook.com/" target="_blank"><img src="../img/face.png" alt="facebook"></a> 
-            </div>
-            </div>
+                <div class="contactoredes"> 
+                    <div class="contact">
+                        <p>+54 9 11 ********</p>
+                        <p>mail@gmail.com</p>
+                    </div>
+                    <div class="redes">
+                        <a href="https://www.instagram.com/" target="_blank"><img src="../img/ig.png" alt="instagram"></a>
+                        <a href="https://www.facebook.com/" target="_blank"><img src="../img/face.png" alt="facebook"></a> 
+                    </div>
+                </div>
+            </div> 
         </section>
     </footer>
     <script src="../js/bootstrap.js"></script>
