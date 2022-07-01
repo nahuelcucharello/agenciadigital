@@ -1,0 +1,701 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #0f0e0e; }
+
+.main {
+  padding: 0px 0px 0px 0px; }
+
+nav .navbar {
+  background-color: rgba(0, 0, 0, 0.097);
+  height: 7vh; }
+
+.navbar-brand {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  text-decoration: none; }
+
+.nav-link {
+  color: #6d6969;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-decoration: none; }
+  .nav-link:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+@media (max-width: 768px) {
+  a .navbar-brand {
+    justify-content: center;
+    margin: 5px;
+    padding: 0px 0px 0px 0px; }
+
+  nav .navbar {
+    height: 9vh; }
+
+  .nav-header {
+    padding: 0px 0px 0px 0px;
+    margin: 10px;
+    position: relative;
+    bottom: 26px; } }
+.footer {
+  background-color: black;
+  color: white;
+  height: 30vh; }
+
+.nav h2 a {
+  text-decoration: none;
+  list-style: none;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+  line-height: 2rem;
+  position: relative;
+  top: 20px;
+  left: 85px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 600; }
+
+.nav2 a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 2rem;
+  position: relative;
+  top: 70px;
+  right: 47px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  z-index: 1; }
+  .nav2 a:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+.contactoredes {
+  position: relative;
+  text-align: end;
+  align-content: center;
+  right: 85px;
+  bottom: 60px; }
+
+.redes img {
+  width: 25px;
+  height: 25px; }
+
+.contact {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400; }
+
+@media (max-width: 768px) {
+  .nav2 a {
+    display: none; }
+
+  .nav {
+    position: relative;
+    top: 0px;
+    justify-content: center; }
+    .nav h2 a {
+      text-decoration: none;
+      list-style: none;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      top: 0px;
+      left: 0px;
+      font-size: 3rem; }
+
+  .contactoredes {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    justify-content: center;
+    text-align: center; }
+
+  .footer {
+    padding: 20px; } }
+/* DISEÑO INDEX */
+/* Presentanción */
+.presentacion {
+  width: 100%;
+  height: 830px;
+  background-image: url(/img/imac2.png);
+  background-size: 100% auto;
+  color: white; }
+  .presentacion-texto {
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 30px;
+    top: 250px; }
+    .presentacion-texto h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 4.5rem; }
+    .presentacion-texto p {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: 1.5rem; }
+
+@media (max-width: 768px) {
+  .presentacion {
+    min-height: 100vh;
+    background-color: #0f0e0e;
+    background-size: 100% auto;
+    color: white;
+    background-image: none;
+    margin: 0px 0px 0px 0px; }
+    .presentacion-texto {
+      margin: 0px 0px 0px 0px;
+      width: 100%;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+      left: 0%;
+      right: 0%;
+      padding-bottom: 50px; }
+      .presentacion-texto h2 {
+        margin: 0px 0px 0px 0px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 3.5rem;
+        text-align: center; }
+      .presentacion-texto p {
+        margin: 0px 0px 0px 0px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 1.2rem;
+        text-align: center;
+        top: 10px;
+        position: relative;
+        padding-left: 60px;
+        padding-right: 60px; } }
+@media (max-width: 460px) {
+  .presentacion-texto h2 {
+    font-size: 3rem; }
+  .presentacion-texto p {
+    padding-left: 20px;
+    padding-right: 20px; } }
+/* Más info */
+.contactanos {
+  height: 830px;
+  background-color: #dfdede; }
+  .contactanos img {
+    width: 900px;
+    height: 900px;
+    position: relative;
+    left: -150px;
+    top: 50px; }
+  .contactanos-texto {
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+    position: relative;
+    bottom: 500px; }
+    .contactanos-texto h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 4.5rem;
+      text-align: end;
+      color: #343434;
+      position: relative; }
+    .contactanos-texto p {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 1.5rem;
+      text-align: end;
+      color: #4a4a4a;
+      position: relative; }
+
+@media (max-width: 768px) {
+  .contactanos {
+    min-height: 100vh;
+    justify-content: center; }
+    .contactanos img {
+      width: 600px;
+      height: 600px;
+      position: relative;
+      top: -200px;
+      left: -200px; }
+    .contactanos-texto {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      position: relative;
+      margin: 0px 0px 0px 0px;
+      padding: 20px; }
+      .contactanos-texto h2 {
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 3rem;
+        text-align: center;
+        color: #343434;
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        top: 250px; }
+      .contactanos-texto p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        text-align: center;
+        color: #4a4a4a;
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        top: 250px; } }
+@media (max-width: 460px) {
+  .contactanos img {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    top: -250px;
+    left: -250px; }
+  .contactanos-texto {
+    padding: 20px;
+    text-align: center; }
+    .contactanos-texto h2 {
+      font-size: 2.5rem;
+      width: 100%;
+      justify-content: center;
+      position: relative;
+      right: 8px; } }
+/* Servicios */
+#servicios {
+  width: 100% auto;
+  height: 830px;
+  background-color: #e8e6e6;
+  background-size: 100% auto; }
+  #servicios h2 {
+    text-align: center;
+    position: relative;
+    top: 130px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 4.5rem;
+    color: #343434; }
+
+#card {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow-x: scroll;
+  gap: 20px;
+  position: relative;
+  top: 160px;
+  color: #4a4a4a;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 20px; }
+
+.card__servicio {
+  width: 280px;
+  height: 380px;
+  padding: 20px 20px 20px 20px;
+  border-radius: 9px;
+  background-color: white;
+  box-shadow: 1px 1px 1px black;
+  align-content: center;
+  align-items: center; }
+  .card__servicio:hover {
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white; }
+  .card__servicio hr {
+    width: 100%;
+    height: 4px;
+    background-color: #33004e;
+    margin: 20px 5px;
+    border-radius: 5px; }
+
+.card__nombre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px; }
+  .card__nombre h4 {
+    font-size: 1.4; }
+  .card__nombre img {
+    width: 40px;
+    height: 40px; }
+
+.card__descripcion p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 20px; }
+
+@media (max-width: 768px) {
+  #servicios {
+    height: 120vh;
+    background-color: #e8e6e6;
+    background-size: 100% auto; }
+    #servicios h2 {
+      text-align: center;
+      position: relative;
+      top: 130px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 3.5rem;
+      color: #343434; }
+
+  #card {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    overflow-x: scroll;
+    gap: 20px;
+    position: relative;
+    bottom: -180px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 20px; }
+
+  .card__servicio {
+    min-width: 280px;
+    min-height: 380px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 9px;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 1px 1px 1px black;
+    align-content: center;
+    align-items: center; }
+    .card__servicio hr {
+      width: 100%;
+      height: 4px;
+      background-color: white;
+      margin: 20px 5px;
+      border-radius: 5px; }
+
+  .card__nombre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px; }
+    .card__nombre h4 {
+      font-size: 1.2; }
+    .card__nombre img {
+      width: 40px;
+      height: 40px; }
+
+  .card__descripcion p {
+    text-align: justify; } }
+/* DISEÑO "NOSOTROS" */
+.presentacion2 {
+  height: 830px;
+  background-color: #dfdede; }
+  .presentacion2-texto {
+    position: relative;
+    top: 300px; }
+    .presentacion2-texto h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 4.5rem;
+      text-align: center;
+      color: #343434; }
+    .presentacion2-texto p {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 1.5rem;
+      text-align: center;
+      color: #4a4a4a; }
+
+.personas {
+  padding: 0px 0px 0px 0px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(2, 830px);
+  grid-template-areas: "persona1" "persona2"; }
+
+.persona1 {
+  width: 100%;
+  height: 830px;
+  background-color: white;
+  background-size: 100% auto;
+  grid-area: persona1;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 830px;
+  grid-template-areas: "foto1 nombre1"; }
+
+.foto1 img {
+  grid-area: foto1;
+  width: 100%;
+  height: 100%; }
+
+.nombre1 {
+  grid-area: nombre1;
+  width: 590px;
+  height: 400px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 250px;
+  padding-left: 70px; }
+  .nombre1 h3 {
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 4.5rem;
+    color: #343434; }
+
+.persona2 {
+  height: 830px;
+  background-color: white;
+  grid-area: persona2;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 830px;
+  grid-template-areas: "nombre2 foto2"; }
+
+.foto2 img {
+  grid-area: foto2;
+  width: 100%;
+  height: 100%; }
+
+.nombre2 {
+  grid-area: nombre2;
+  width: 500px;
+  height: 400px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  left: 40px;
+  top: 250px;
+  padding: 10px; }
+  .nombre2 h3 {
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 4.5rem;
+    color: #343434; }
+
+@media (max-width: 768px) {
+  .presentacion2 {
+    min-height: 100vh; }
+    .presentacion2-texto {
+      position: relative;
+      top: 300px; }
+      .presentacion2-texto h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 3rem;
+        text-align: center;
+        color: #343434; }
+      .presentacion2-texto p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 1.2rem;
+        text-align: center;
+        color: #4a4a4a; }
+
+  .personas {
+    padding: 0px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, 100vh);
+    grid-template-areas: "persona1" "persona2"; }
+
+  .persona1 {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    background-size: 100%;
+    grid-area: persona1;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 45% 55%;
+    grid-template-areas: "nombre1 foto1"; }
+
+  .foto1 img {
+    grid-area: foto1;
+    width: 100px;
+    height: 100px; }
+
+  .nombre1 {
+    height: 150px;
+    width: 100%;
+    grid-area: nombre1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 0px;
+    padding-left: 0px; }
+    .nombre1 h3 {
+      text-align: left;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 2.5rem;
+      color: #343434; }
+
+  .persona2 {
+    height: 100vh;
+    background-color: white;
+    grid-area: persona2;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 45% 55%;
+    grid-template-areas: "nombre2 foto2"; }
+
+  .foto2 img {
+    grid-area: foto2;
+    width: 100px;
+    height: 100px; }
+
+  .nombre2 {
+    height: 150px;
+    width: 100%;
+    grid-area: nombre2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 0px;
+    top: 0px;
+    padding: 0px; }
+    .nombre2 h3 {
+      text-align: left;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 2.5rem;
+      color: #343434; } }
+/* DISEÑO "CLIENTES" */
+.presentacion3 {
+  height: 830px;
+  background-color: #0b0b0b; }
+  .presentacion3-texto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    top: 200px;
+    color: white; }
+    .presentacion3-texto h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 4.5rem; }
+    .presentacion3-texto p {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 1.2rem; }
+
+.clientes {
+  position: relative;
+  top: 300px; }
+
+.logosclientes img {
+  width: 100px;
+  height: 100px; }
+
+@media (max-width: 768px) {
+  .presentacion3 {
+    height: 200vh;
+    background-color: #0b0b0b; }
+    .presentacion3-texto {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      position: relative;
+      top: 200px;
+      color: white; }
+    .presentacion3 h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 3rem; }
+    .presentacion3 p {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 1.2rem;
+      padding: 0px 80px 0px 80px; }
+
+  .clientes {
+    gap: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
+  .logosclientes img {
+    width: 120px;
+    height: 120px; } }
+/* DISEÑO "CONTACTO" */
+.presentacion4 {
+  height: 830px;
+  background-color: #0b0b0b; }
+  .presentacion4 img {
+    width: 700px;
+    height: 700px;
+    position: relative;
+    right: 70px;
+    bottom: 300px;
+    z-index: -1; }
+  .presentacion4-texto {
+    width: 600px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 300px;
+    left: 50px;
+    z-index: 1;
+    color: white;
+    text-align: left; }
+    .presentacion4-texto h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 3rem;
+      color: white; }
+    .presentacion4-texto p {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 1.2rem;
+      color: white; }
+
+.form {
+  position: relative;
+  top: 300px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400; }
+
+.btn {
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1rem; }
+
+.contacto {
+  height: 600px; }

@@ -1,0 +1,279 @@
+@charset "UTF-8";
+/* DISEÑO INDEX */
+/* Presentanción */
+.presentacion {
+  width: 100%;
+  height: 830px;
+  background-image: url(/img/imac2.png);
+  background-size: 100% auto;
+  color: white; }
+  .presentacion-texto {
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 30px;
+    top: 250px; }
+    .presentacion-texto h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 4.5rem; }
+    .presentacion-texto p {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: 1.5rem; }
+
+@media (max-width: 768px) {
+  .presentacion {
+    min-height: 100vh;
+    background-color: #0f0e0e;
+    background-size: 100% auto;
+    color: white;
+    background-image: none;
+    margin: 0px 0px 0px 0px; }
+    .presentacion-texto {
+      margin: 0px 0px 0px 0px;
+      width: 100%;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+      left: 0%;
+      right: 0%;
+      padding-bottom: 50px; }
+      .presentacion-texto h2 {
+        margin: 0px 0px 0px 0px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 3.5rem;
+        text-align: center; }
+      .presentacion-texto p {
+        margin: 0px 0px 0px 0px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 1.2rem;
+        text-align: center;
+        top: 10px;
+        position: relative;
+        padding-left: 60px;
+        padding-right: 60px; } }
+@media (max-width: 460px) {
+  .presentacion-texto h2 {
+    font-size: 3rem; }
+  .presentacion-texto p {
+    padding-left: 20px;
+    padding-right: 20px; } }
+/* Más info */
+.contactanos {
+  height: 830px;
+  background-color: #dfdede; }
+  .contactanos img {
+    width: 900px;
+    height: 900px;
+    position: relative;
+    left: -150px;
+    top: 50px; }
+  .contactanos-texto {
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+    position: relative;
+    bottom: 500px; }
+    .contactanos-texto h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 4.5rem;
+      text-align: end;
+      color: #343434;
+      position: relative; }
+    .contactanos-texto p {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 1.5rem;
+      text-align: end;
+      color: #4a4a4a;
+      position: relative; }
+
+@media (max-width: 768px) {
+  .contactanos {
+    min-height: 100vh;
+    justify-content: center; }
+    .contactanos img {
+      width: 600px;
+      height: 600px;
+      position: relative;
+      top: -200px;
+      left: -200px; }
+    .contactanos-texto {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      position: relative;
+      margin: 0px 0px 0px 0px;
+      padding: 20px; }
+      .contactanos-texto h2 {
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 3rem;
+        text-align: center;
+        color: #343434;
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        top: 250px; }
+      .contactanos-texto p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        text-align: center;
+        color: #4a4a4a;
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        top: 250px; } }
+@media (max-width: 460px) {
+  .contactanos img {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    top: -250px;
+    left: -250px; }
+  .contactanos-texto {
+    padding: 20px;
+    text-align: center; }
+    .contactanos-texto h2 {
+      font-size: 2.5rem;
+      width: 100%;
+      justify-content: center;
+      position: relative;
+      right: 8px; } }
+/* Servicios */
+#servicios {
+  width: 100% auto;
+  height: 830px;
+  background-color: #e8e6e6;
+  background-size: 100% auto; }
+  #servicios h2 {
+    text-align: center;
+    position: relative;
+    top: 130px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 4.5rem;
+    color: #343434; }
+
+#card {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow-x: scroll;
+  gap: 20px;
+  position: relative;
+  top: 160px;
+  color: #4a4a4a;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 20px; }
+
+.card__servicio {
+  width: 280px;
+  height: 380px;
+  padding: 20px 20px 20px 20px;
+  border-radius: 9px;
+  background-color: white;
+  box-shadow: 1px 1px 1px black;
+  align-content: center;
+  align-items: center; }
+  .card__servicio:hover {
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white; }
+  .card__servicio hr {
+    width: 100%;
+    height: 4px;
+    background-color: #33004e;
+    margin: 20px 5px;
+    border-radius: 5px; }
+
+.card__nombre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px; }
+  .card__nombre h4 {
+    font-size: 1.4; }
+  .card__nombre img {
+    width: 40px;
+    height: 40px; }
+
+.card__descripcion p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 20px; }
+
+@media (max-width: 768px) {
+  #servicios {
+    height: 120vh;
+    background-color: #e8e6e6;
+    background-size: 100% auto; }
+    #servicios h2 {
+      text-align: center;
+      position: relative;
+      top: 130px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 3.5rem;
+      color: #343434; }
+
+  #card {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    overflow-x: scroll;
+    gap: 20px;
+    position: relative;
+    bottom: -180px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 20px; }
+
+  .card__servicio {
+    min-width: 280px;
+    min-height: 380px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 9px;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 1px 1px 1px black;
+    align-content: center;
+    align-items: center; }
+    .card__servicio hr {
+      width: 100%;
+      height: 4px;
+      background-color: white;
+      margin: 20px 5px;
+      border-radius: 5px; }
+
+  .card__nombre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px; }
+    .card__nombre h4 {
+      font-size: 1.2; }
+    .card__nombre img {
+      width: 40px;
+      height: 40px; }
+
+  .card__descripcion p {
+    text-align: justify; } }
+
+/*# sourceMappingURL=index.css.map */

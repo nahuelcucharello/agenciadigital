@@ -1,0 +1,89 @@
+.footer {
+  background-color: black;
+  color: white;
+  height: 30vh; }
+
+.nav h2 a {
+  text-decoration: none;
+  list-style: none;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+  line-height: 2rem;
+  position: relative;
+  top: 20px;
+  left: 85px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 600; }
+
+.nav2 a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 2rem;
+  position: relative;
+  top: 70px;
+  right: 47px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  z-index: 1; }
+  .nav2 a:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+.contactoredes {
+  position: relative;
+  text-align: end;
+  align-content: center;
+  right: 85px;
+  bottom: 60px; }
+
+.redes img {
+  width: 25px;
+  height: 25px; }
+
+.contact {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400; }
+
+@media (max-width: 768px) {
+  .nav2 a {
+    display: none; }
+
+  .nav {
+    position: relative;
+    top: 0px;
+    justify-content: center; }
+    .nav h2 a {
+      text-decoration: none;
+      list-style: none;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      top: 0px;
+      left: 0px;
+      font-size: 3rem; }
+
+  .contactoredes {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    justify-content: center;
+    text-align: center; }
+
+  .footer {
+    padding: 20px; } }
+
+/*# sourceMappingURL=footer.css.map */
