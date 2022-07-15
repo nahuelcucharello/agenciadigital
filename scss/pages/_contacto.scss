@@ -1,0 +1,145 @@
+                                                     /* DISEÑO "CONTACTO" */
+
+@import "../mixins/mixins";                                                     
+
+.presentacion4 {
+    background-color: rgba(0, 0, 0, 0.753);
+    padding: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+
+    .mapa{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        padding: 0px;
+        z-index: -1;
+    }
+
+    &-texto{
+            width: 30%;
+            justify-content: center;
+            align-items: center;
+            right: 60px;
+            position: relative;
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 4rem;
+            color: rgb(255, 255, 255);
+        }
+
+        p{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 1.6rem;
+            color: rgb(255, 255, 255);
+        }
+    }
+
+    &-form{
+        width: 30%;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 528px;
+        flex-grow: 0;
+        position: relative;
+        left: 60px;
+    }
+}
+
+.contacto{
+    margin: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1;
+}
+
+.form-select{
+    margin-top: 20px;
+}
+
+.btn{
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+
+
+@include breakpoint(xl){
+.contacto{
+    margin: 20px;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1;
+}
+
+.presentacion4-texto{
+    top: 80px;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 0px;
+}
+
+.presentacion4-form{
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 0px;
+    top: 80px;
+}
+}
+
+@include breakpoint(md){
+
+    .presentacion4-texto{
+        position: relative;
+        top: 80px;
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        p{
+            font-size: 1.2rem;
+        } 
+    }
+
+    .presentacion4-form{
+        position: relative;
+        top: 80px;
+    }
+
+}
+
+@include breakpoint(sm){
+
+    .presentacion4-texto{
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        p{
+            font-size: 1.2rem;
+        }
+        
+    }
+
+}

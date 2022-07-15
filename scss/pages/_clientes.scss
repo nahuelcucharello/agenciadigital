@@ -1,0 +1,86 @@
+                                                      /* DISEÑO "CLIENTES" */
+
+@import "../mixins/mixins";
+
+.presentacion3 {
+    z-index: 2;
+    height: 830px;
+    background-color: rgb(11, 11, 11);
+
+    &-texto{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        top: 200px;
+        color:rgb(255, 255, 255) ;
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 4.5rem;
+        }
+
+        p{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.clientes {
+    position: relative;
+    top: 300px;
+}
+
+.logosclientes{
+    img{
+        width: 100px; height: 100px;
+    }
+}
+
+@include breakpoint(md){
+
+    .presentacion3{
+        height: 200vh;
+        background-color: rgb(11, 11, 11);
+
+        &-texto{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            position: relative;
+            top: 200px;
+            color:rgb(255, 255, 255) ;
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 3rem;
+        }
+
+        p{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 1.2rem;
+            padding: 0px 80px 0px 80px;
+        }
+    }
+
+    .clientes{
+        gap: 30px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logosclientes{
+        img{
+            width: 120px; height: 120px; 
+        }
+    }
+
+}

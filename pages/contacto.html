@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/syle.css">
+    <link rel="stylesheet" href="../scss/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <title>Creative Agencia Digital - Contacto</title>
+    <meta name="description" content="Te asesoramos gratuitamente en función de lo que tu marca necesite">
+    <meta name="keywords" content= "SERVICIOS DIGITALES, REDES SOCIALES, FOTOGRAFÍA, TIENDA VIRTUAL, DISEÑO WEB">
+    <title>Creative Agencia Digital | Contactanos para hacer crecer tu marca</title>
 </head>
 
 <body>
@@ -23,6 +25,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="../index.html">INICIO</a>
                     <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
                     <a class="nav-link" href="../index.html#servicios">SERVICIOS</a>
                     <a class="nav-link" href="./clientes.html">CLIENTES</a>
@@ -34,14 +37,36 @@
 
 <!-- FORMULARIO-->
         <section class="container-fluid presentacion4">
-            <section class="row contacto">
-                <div class="col-6 presentacion4-texto">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246614.36638863705!2d-58.40948323103882!3d-34.695998038647446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a329628f552cad%3A0x813d55ba09834999!2sFlorencio%20Varela%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1657846591859!5m2!1ses-419!2sar" class="mapa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <section class="contacto">
+                <div class="presentacion4-texto">
                     <h2>CONTACTANOS</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <img src="../img/iphone.png"alt="muestra">
+                    <p>Juntos hagamos crecer tu marca.</p>
                 </div>
+                <div class="presentacion4-form">
+                <form class="formcontacto" method="GET" action="#">
+                    <div class="form-group">
+                        <label for="exampleInputText">Nombre</label>
+                        <input type="text" class="form-control inputtext" id="exampleInputText" aria-describedby="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Correo Electrónico</label>
+                        <input type="email" class="form-control inputtext" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Servicio a consultar</option>
+                        <option value="1">Comunidad</option>
+                        <option value="2">E-Commerce</option>
+                        <option value="3">Cobertura</option>
+                        <option value="4">Desarrollo Web</option>
+                    </select>
+                    <button class="btn" type="submit">Enviar</button>
+                </div>
+                </form>
 
-                <div class="col-4 offset-2 form">
+
+
+                <!-- <div class="col-4 offset-2 form">
                     <form>
                         <div class="row">
                             <div class="col">
@@ -67,13 +92,8 @@
                             <button class="btn" type="submit">Enviar</button>
                           </div>
                     </form>
-                </div>
-
-
-
+                </div> -->
             </section>
-        
-           
          </section>
 
 <!-- FOOTER -->
@@ -91,11 +111,11 @@
                     </nav>
                 </div>
                 <div class="contactoredes"> 
-                    <div class="contact">
+                    <div class="contactoredes_telmail">
                         <p>+54 9 11 ********</p>
                         <p>mail@gmail.com</p>
                     </div>
-                    <div class="redes">
+                    <div class="contactoredes_links">
                         <a href="https://www.instagram.com/" target="_blank"><img src="../img/ig.png" alt="instagram"></a>
                         <a href="https://www.facebook.com/" target="_blank"><img src="../img/face.png" alt="facebook"></a> 
                     </div>

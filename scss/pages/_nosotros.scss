@@ -1,0 +1,238 @@
+                                                     /* DISEÑO "NOSOTROS" */
+
+@import "../mixins/mixins";
+
+.presentacion2 {
+    height: 830px;
+    background-color: rgb(223, 222, 222);
+
+    &-texto{
+        position: relative;
+        top: 300px;
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 4.5rem;
+            text-align: center;
+            color: rgb(52, 52, 52);
+        }
+
+        p{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 1.5rem;
+            text-align: center;
+            color: rgb(74, 74, 74);
+        }
+    }
+}
+
+.personas{
+    padding: 0px 0px 0px 0px;
+}
+
+.persona1 {
+    width:100%; height: 830px;
+    background-color: rgb(255, 255, 255);
+    background-size: 100% auto;
+    margin: 0px 0px 0px 0px;
+}
+
+.foto1{
+    padding: 0px;
+    height: 830px;
+
+    img{
+        width: 100%; height: 100%;
+        object-fit:cover;
+    }
+} 
+
+.nombre1{
+    height: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 250px;
+    padding-left: 70px;
+
+    h3{
+        text-align: left;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 4.5rem;
+        color: rgb(52, 52, 52);
+    }
+}
+
+.persona2 {
+    margin: 0px;
+    height: 830px;
+    background-color: rgb(255, 255, 255);
+}
+
+.foto2{
+    padding: 0px;
+    height: 830px;
+
+    img{
+        width: 100%; height: 100%;
+        object-fit:cover;
+    }
+} 
+
+.nombre2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 40px;
+    top: 250px;
+    padding: 10px;
+    height: 300px;
+
+    h3{
+        text-align: left;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 4.5rem;
+        color: rgb(52, 52, 52);
+    }
+}
+
+@include breakpoint(xl){
+
+    .nombre1{
+        padding-left: 20px;
+        h3{
+            text-align: left;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 3.3rem;
+            color: rgb(52, 52, 52);
+        }
+    }
+
+    .nombre2{
+        padding-left: 20px;
+        position: relative;
+        left: 0px;
+        h3{
+            text-align: left;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 3.5rem;
+            color: rgb(52, 52, 52);
+        }
+    }
+
+}
+
+@include breakpoint(md) {
+    .presentacion2{
+        min-height: 100vh;
+
+        &-texto{
+            position: relative;
+            top: 300px;
+
+            h2 {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 800;
+                font-size: 3rem;
+                text-align: center;
+                color: rgb(52, 52, 52);
+            }
+
+            p{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+                font-size: 1.2rem;
+                text-align: center;
+                color: rgb(74, 74, 74);
+            }
+        }
+    }
+
+    .personas{
+        padding: 0px 0px 0px 0px;
+    }
+    
+    .persona1 {
+        height: 80vh;
+        background-color: rgb(255, 255, 255);
+        background-size: 100%;
+    }
+
+    .foto1{
+        height: 55vh;
+        img{
+            width: 100%; height: 100%;
+            object-fit:cover;
+        }
+    } 
+   
+    .nombre1{
+        height: 150px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        top: 0px;
+        padding: 0px;
+        left: 10px;
+
+        h3{
+            text-align: left;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 2.5rem;
+            color: rgb(52, 52, 52);
+            position: relative;
+            right: 0px;
+        }
+    }
+
+    .persona2 {
+        height: 70vh;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .foto2{
+        height: 50vh;
+        img{
+            width: 100%; height: 100%;
+            object-fit:cover;
+        }
+    }
+    
+    .nombre2{
+        height: 150px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        left: 10px;
+        top: 0px;
+        padding: 0px;
+
+        h3{
+            text-align: left;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 2.5rem;
+            color: rgb(52, 52, 52);
+            position: relative;
+            right: 0px;
+        }
+    }
+}
+
+
+
+
+    
+    
+
+
+
