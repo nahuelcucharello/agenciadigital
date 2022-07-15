@@ -6,6 +6,11 @@
     background-color: rgb(0, 0, 0);
     color: white;
     height: 30vh;
+    width: 100%;
+}
+
+.rowfooter{
+    padding: 0px;
 }
 
 .nav{
@@ -60,20 +65,23 @@
     align-content: center;
     right: 85px;
     bottom: 60px;
-}
 
-.redes{
-    img {
-        width: 25px; height: 25px;
+    &_telmail{
+        position: relative;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        font-weight:400;
     }
-} 
 
-.contact{
-    position: relative;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
-    font-weight:400;
+    &_links{
+        img {
+            width: 25px; height: 25px;
+        }
+    }
 }
+
+
+
 
 @media (max-width: 768px){
     .nav2{

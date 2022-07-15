@@ -99,7 +99,6 @@ $background:(
 
 
 
-
 /* Más info */
 
 .contactanos {
@@ -193,27 +192,27 @@ $background:(
 }
 
 @include breakpoint(sm){
-     .contactanos{
-         img{
-             width: 600px; height: 600px;
-             position: relative;
-             top: -250px;
-             left: -250px;
-         }
+    .contactanos{
+        img{
+            width: 600px; height: 600px;
+            position: relative;
+            top: -250px;
+            left: -250px;
+        }
 
-         &-texto{
-             padding: 20px;
-             text-align: center;
+        &-texto{
+            padding: 20px;
+            text-align: center;
 
-             h2 {
-                 font-size: 2.5rem;
-                 width: 100%;
-                 justify-content: center;
-                 position: relative;
-                 right: 8px;
-             }
-         }
-     }
+            h2 {
+                font-size: 2.5rem;
+                width: 100%;
+                justify-content: center;
+                position: relative;
+                right: 8px;
+            }
+        }
+    }
 
 }
 
@@ -257,7 +256,8 @@ $background:(
 }
 
 .card__servicio{
-    width: 280px; height: 380px;
+    min-width: 280px; min-height: 380px;
+    max-width: 280px;
     padding: 20px 20px 20px 20px;
     border-radius: 9px;
     background-color: white;
@@ -299,6 +299,152 @@ $background:(
     font-weight: 500;
     font-size: 1.1rem;
     padding: 20px;
+}
+
+@include breakpoint(xl){
+    #servicios {
+        height: 120vh;
+        background-color: rgb(232, 230, 230);
+        background-size: 100% auto;
+
+        h2{
+            text-align: center;
+            position: relative;
+            top: 130px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 4.5rem;
+            color: rgb(52, 52, 52);
+        }
+    }
+   
+    #card {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        overflow-x: scroll;
+        gap: 20px;
+        position: relative;
+        bottom: -180px;
+        color: rgb(74, 74, 74);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        padding: 20px;
+    }
+   
+    .card__servicio{
+        min-width: 280px; min-height: 380px;
+        padding: 20px 20px 20px 20px;
+        border-radius: 9px;
+        background-color: white;
+        box-shadow: 1px 1px 1px black;
+        align-content: center;
+        align-items: center;
+
+        &:hover{
+            background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        hr{
+            width: 100%;
+            height: 4px;
+            background-color: rgb(51, 0, 78);
+            margin: 20px 5px;
+            border-radius: 5px;
+        }
+    }
+   
+    .card__nombre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+
+        h4{
+            font-size: 1.2;
+        }
+
+        img{
+            width: 40px; height: 40px;
+        }
+    }
+
+}
+
+@include breakpoint(lg){
+    #servicios {
+        height: 120vh;
+        background-color: rgb(232, 230, 230);
+        background-size: 100% auto;
+
+        h2{
+            text-align: center;
+            position: relative;
+            top: 130px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 4.5rem;
+            color: rgb(52, 52, 52);
+        }
+    }
+   
+    #card {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        overflow-x: scroll;
+        gap: 20px;
+        position: relative;
+        bottom: -180px;
+        color: rgb(74, 74, 74);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        padding: 20px;
+    }
+   
+    .card__servicio{
+        min-width: 280px; min-height: 380px;
+        padding: 20px 20px 20px 20px;
+        border-radius: 9px;
+        background-color: white;
+        box-shadow: 1px 1px 1px black;
+        align-content: center;
+        align-items: center;
+
+        &:hover{
+            background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        hr{
+            width: 100%;
+            height: 4px;
+            background-color: rgb(51, 0, 78);
+            margin: 20px 5px;
+            border-radius: 5px;
+        }
+    }
+   
+    .card__nombre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+
+        h4{
+            font-size: 1.2;
+        }
+
+        img{
+            width: 40px; height: 40px;
+        }
+    }
+
 }
 
 @include breakpoint(md){
@@ -367,8 +513,6 @@ $background:(
          }
      }
 
-     .card__descripcion p{
-         text-align: justify;
-     }
-
 }
+
+
