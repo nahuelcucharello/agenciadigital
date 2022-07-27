@@ -3,7 +3,6 @@
 @import "../mixins/mixins";
 
 .presentacion3 {
-    z-index: 2;
     height: 830px;
     background-color: rgb(11, 11, 11);
 
@@ -11,9 +10,8 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        position: relative;
-        top: 200px;
-        color:rgb(255, 255, 255) ;
+        padding-top: 170px;
+        color:rgb(255, 255, 255);
 
         h2 {
             font-family: 'Montserrat', sans-serif;
@@ -30,8 +28,8 @@
 }
 
 .clientes {
-    position: relative;
-    top: 300px;
+    margin: 50px;
+    padding-top: 40px;
 }
 
 .logosclientes{
@@ -41,33 +39,21 @@
 }
 
 @include breakpoint(md){
-
     .presentacion3{
-        height: 200vh;
+        height: 150vh;
         background-color: rgb(11, 11, 11);
 
         &-texto{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            position: relative;
-            top: 200px;
-            color:rgb(255, 255, 255) ;
-        }
+            padding-top: 100px;
 
         h2 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 800;
             font-size: 3rem;
         }
 
         p{
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 400;
-            font-size: 1.2rem;
             padding: 0px 80px 0px 80px;
         }
-    }
+        }
 
     .clientes{
         gap: 30px;
@@ -75,12 +61,14 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin: 20px;
+        padding-top: 0px;
     }
 
     .logosclientes{
         img{
-            width: 120px; height: 120px; 
+            width: 100px; height: 100px; 
         }
     }
-
+    }
 }

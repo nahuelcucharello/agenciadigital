@@ -4,7 +4,7 @@
 
 $background:(
     contactanos:rgb(223, 222, 222),
-    servicios:rgb(232, 230, 230),
+    trabajos:rgb(255, 255, 255),
 );
 
 
@@ -15,72 +15,64 @@ $background:(
     width: 100%;
     height: 830px;
     background-image:url(../img/imac2.png);
-    background-size: 100% auto;
+    background-size: 100%;
+    object-fit: cover;
+    
     color: white;
     padding: 0px 0px 0px 0px;
 
     &-texto{
-    width: 40vw; height: 50vh;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    left: 30px;
-    top: 250px;
-
-    h1 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 800;
-        font-size: 4.5rem;
-    }
-
-    p{
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 300;
-        font-size: 1.5rem;
-
-    }
+        width: 40vw; height: 50vh;
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        padding-top: 250px;    
+        
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 4.5rem;
+        }
+    
+        p{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            font-size: 1.5rem;
+    
+        }
     }
 
     @include breakpoint(md){
-        
-        min-height: 100vh;
+        min-height: 80vh;
         background-color: rgb(15, 14, 14) ;
-        background-size: 100% auto;
-        color: white;
+        background-size: 100%;
         background-image: none;
-        margin: 0px 0px 0px 0px;
      
-            &-texto{
+        &-texto{
+            margin: 0px 0px 0px 0px;
+            width: 100%; height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 0px;
+            padding-top: 300px;
+ 
+            h1 {
                 margin: 0px 0px 0px 0px;
-                width: 100%; height: 50vh;
-                display: flex;
-                flex-direction: column;
-                position: relative;
-                justify-content: center;
-                left: 0%;
-                right: 0%;
-                padding-bottom: 50px;
-     
-                h1 {
-                    margin: 0px 0px 0px 0px;
-                    font-family: 'Montserrat', sans-serif;
-                    font-weight: 800;
-                    font-size: 3.5rem;
-                    text-align: center;
-                  }
-     
-                p{
-                    margin: 0px 0px 0px 0px;
-                    font-family: 'Montserrat', sans-serif;
-                    font-weight: 400;
-                    font-size: 1.2rem;
-                    text-align: center;
-                    top: 10px;
-                    position: relative;
-                    padding-left: 60px;
-                    padding-right: 60px;
-                }
-            }    
+                font-size: 3.5rem;
+                text-align: center;
+              }
+ 
+            p{
+                margin: 0px 0px 0px 0px;
+                font-weight: 400;
+                font-size: 1.2rem;
+                text-align: center;
+                padding-top: 10px;
+                padding-left: 60px;
+                padding-right: 60px;
+            }
+        }        
     } 
     
     @include breakpoint(sm){
@@ -92,11 +84,10 @@ $background:(
            p{
              padding-left: 20px;
              padding-right: 20px;
-             }
-         } 
+            }
+        } 
     }
 }
-
 
 
 /* Más info */
@@ -109,16 +100,15 @@ $background:(
     img{
         width: 900px; height: 900px;
         position: relative;
-        left: -150px;
-        top: 50px;
+        bottom: 370px;
+        right: 180px;
     }
 
     &-texto {
         display: flex;
         flex-direction: column;
         margin-right: 40px;
-        position: relative;
-        bottom: 500px;   
+        padding-top: 300px;
 
         h2 {
             font-family: 'Montserrat', sans-serif;
@@ -126,7 +116,7 @@ $background:(
             font-size: 4.5rem;
             text-align: end;
             color: rgb(52, 52, 52);
-            position: relative;
+            z-index: 1;
         }
 
         p{
@@ -135,384 +125,190 @@ $background:(
             font-size: 1.5rem;
             text-align: end;
             color: rgb(74, 74, 74);
-            position: relative;
+            z-index: 1;
         }
     }
 }
 
 @include breakpoint(md){
-     .contactanos {
-         min-height: 100vh;
-         justify-content: center;
+    .contactanos {
+        min-height: 80vh;
+        justify-content: center;
 
-         img{
-             width: 600px; height: 600px;
-             position: relative;
-             top: -200px;
-             left: -200px;
-         }
+        img{
+            width: 650px; height: 650px;
+            position: relative;
+            bottom: 700px;
+            right: 250px; 
+        }
 
-         &-texto {
-             width: 100%;
-             display: flex;
-             flex-direction: column;
-             text-align: center;
-             position: relative;
-             margin: 0px 0px 0px 0px;
-             padding: 20px;
+        &-texto {
+            width: 100%;
+            text-align: center;
+            margin: 0px 0px 0px 0px;
+            padding-top: 400px;
 
-             h2 {
-                 width: 100%;
-                 font-family: 'Montserrat', sans-serif;
-                 font-weight: 800;
-                 font-size: 3rem;
-                 text-align: center;
-                 color: rgb(52, 52, 52);
-                 position: relative;
-                 margin: 0px 0px 0px 0px;
-                 padding: 0px 0px 0px 0px;
-                 top: 250px;
-             }
+            h2{
+                width: 100%;
+                font-size: 3rem;
+                text-align: center;
+                margin: 0px 0px 0px 0px;
+                padding: 0px 0px 0px 0px;
+            }
 
-             p{
-                 font-family: 'Montserrat', sans-serif;
-                 font-weight: 400;
-                 font-size: 1rem;
-                 text-align: center;
-                 color: rgb(74, 74, 74);
-                 position: relative;
-                 margin: 0px 0px 0px 0px;
-                 padding: 0px 0px 0px 0px;
-                 top: 250px
-
-             }
-         }
-     }
-
+            p{
+                font-size: 1rem;
+                text-align: center;
+                margin: 0px 0px 0px 0px;
+                padding: 0px 0px 0px 0px;
+            }
+        }
+    }
 }
 
 @include breakpoint(sm){
     .contactanos{
         img{
-            width: 600px; height: 600px;
+            width: 650px; height: 650px;
             position: relative;
-            top: -250px;
-            left: -250px;
+            bottom: 700px;
+            right: 300px;
         }
 
         &-texto{
-            padding: 20px;
+            width: 100%;
             text-align: center;
+            margin: 0px 0px 0px 0px;
+            padding-top: 400px;
 
             h2 {
-                font-size: 2.5rem;
                 width: 100%;
-                justify-content: center;
-                position: relative;
-                right: 8px;
+                font-size: 2.5rem;
+                text-align: center;
+                margin: 0px 0px 0px 0px;
+                padding: 0px 0px 0px 0px;;
             }
         }
     }
-
 }
 
 
 /* Servicios */
 
-#servicios {
-    @extend.contactanos;
-    background-color:map-get($background,"servicios");
-
-    img{
-        width: 0px;
-        height: 0px;
-    }
+.trabajos{
+    height: 830px;
+    background-color: map-get($background, "trabajos");
 
     h2{
-        text-align: center;
-        position: relative;
-        top: 130px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 800;
-        font-size: 4.5rem;
+        font-size: 3rem;
+        text-align: center;
         color: rgb(52, 52, 52);
+        padding: 80px;
     }
 }
 
-#card {
-    width: 100%;
+.videos{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    overflow-x: scroll;
-    gap: 20px;
-    position: relative;
-    top: 160px;
-    color: rgb(74, 74, 74);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    padding: 20px;
+    align-items: center;
+    gap: 60px;
 }
 
-.card__servicio{
-    min-width: 280px; min-height: 380px;
-    max-width: 280px;
-    padding: 20px 20px 20px 20px;
-    border-radius: 9px;
-    background-color: white;
-    box-shadow: 1px 1px 1px black;
-    align-content: center;
-    align-items: center;
+.trabajo1{
+    background-image:url(../img/1.png);
+    height: 500px;
+    width: 260px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0px 0px 0px 0px;
+    
 
     &:hover{
-        background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        color: white;
-    }
-
-    hr{
-        width: 100%;
-        height: 4px;
-        background-color: rgb(51, 0, 78);
-        margin: 20px 5px;
-        border-radius: 5px;
-    }
-}
-
-.card__nombre{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-
-    h4{
-        font-size: 1.4;
-    }
-
-    // img{
-    //     width: 40px; height: 40px;
-    // }
-}
-
-.card__descripcion p{
-    text-align: center;
-    font-weight: 500;
-    font-size: 1.1rem;
-    padding: 20px;
-}
-
-@include breakpoint(xl){
-    #servicios {
-        height: 120vh;
-        background-color: rgb(232, 230, 230);
-        background-size: 100% auto;
-
-        h2{
-            text-align: center;
-            position: relative;
-            top: 130px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 800;
-            font-size: 4.5rem;
-            color: rgb(52, 52, 52);
-        }
-    }
-   
-    #card {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        overflow-x: scroll;
-        gap: 20px;
-        position: relative;
-        bottom: -180px;
-        color: rgb(74, 74, 74);
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 400;
-        font-size: 1rem;
-        padding: 20px;
-    }
-   
-    .card__servicio{
-        min-width: 280px; min-height: 380px;
-        padding: 20px 20px 20px 20px;
-        border-radius: 9px;
-        background-color: white;
-        box-shadow: 1px 1px 1px black;
-        align-content: center;
-        align-items: center;
-
-        &:hover{
-            background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-
-        hr{
-            width: 100%;
-            height: 4px;
-            background-color: rgb(51, 0, 78);
-            margin: 20px 5px;
-            border-radius: 5px;
-        }
-    }
-   
-    .card__nombre{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 25px;
-
-        h4{
-            font-size: 1.2;
-        }
-
-        img{
-            width: 40px; height: 40px;
-        }
+        background-image:url(../img/mockup.gif);
+        height: 500px;
+        width: 260px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: .3s;
     }
 
 }
+.trabajo2{
+    background-image:url(../img/3.png);
+    height: 500px;
+    width: 260px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0px 0px 0px 0px;
+
+    &:hover{
+        background-image:url(../img/mockup.gif);
+        height: 500px;
+        width: 260px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: .3s;
+    }
+    
+}
+.trabajo3{
+    background-image:url(../img/5.png);
+    height: 500px;
+    width: 260px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0px 0px 0px 0px;
+
+    &:hover{
+        background-image:url(../img/mockup.gif);
+        height: 500px;
+        width: 260px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: .3s;
+    }
+}
+
 
 @include breakpoint(lg){
-    #servicios {
-        height: 120vh;
-        background-color: rgb(232, 230, 230);
-        background-size: 100% auto;
-
-        h2{
-            text-align: center;
-            position: relative;
-            top: 130px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 800;
-            font-size: 4.5rem;
-            color: rgb(52, 52, 52);
+    .trabajos{
+        height: 2000px;
         }
-    }
-   
-    #card {
-        width: 100%;
+
+    .videos{
         display: flex;
-        flex-direction: row;
-        justify-content: left;
-        overflow-x: scroll;
-        gap: 20px;
-        position: relative;
-        bottom: -180px;
-        color: rgb(74, 74, 74);
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 400;
-        font-size: 1rem;
-        padding: 20px;
+        flex-direction: column;  
     }
-   
-    .card__servicio{
-        min-width: 280px; min-height: 380px;
-        padding: 20px 20px 20px 20px;
-        border-radius: 9px;
-        background-color: white;
-        box-shadow: 1px 1px 1px black;
-        align-content: center;
-        align-items: center;
-
-        &:hover{
-            background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-
-        hr{
-            width: 100%;
-            height: 4px;
-            background-color: rgb(51, 0, 78);
-            margin: 20px 5px;
-            border-radius: 5px;
-        }
-    }
-   
-    .card__nombre{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 25px;
-
-        h4{
-            font-size: 1.2;
-        }
-
-        img{
-            width: 40px; height: 40px;
-        }
-    }
-
 }
 
 @include breakpoint(md){
-     #servicios {
-         height: 120vh;
-         background-color: rgb(232, 230, 230);
-         background-size: 100% auto;
+    .trabajos{
+        height: 2100px;
+        
 
-         h2{
-             text-align: center;
-             position: relative;
-             top: 130px;
-             font-family: 'Montserrat', sans-serif;
-             font-weight: 800;
-             font-size: 3.5rem;
-             color: rgb(52, 52, 52);
-         }
-     }
-    
-     #card {
-         width: 100%;
-         display: flex;
-         flex-direction: row;
-         justify-content: left;
-         overflow-x: scroll;
-         gap: 20px;
-         position: relative;
-         bottom: -180px;
-         color: rgb(255, 255, 255);
-         font-family: 'Montserrat', sans-serif;
-         font-weight: 400;
-         font-size: 1rem;
-         padding: 20px;
-     }
-    
-     .card__servicio{
-         min-width: 280px; min-height: 380px;
-         padding: 20px 20px 20px 20px;
-         border-radius: 9px;
-         background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-         box-shadow: 1px 1px 1px black;
-         align-content: center;
-         align-items: center;
+    h2{
+        font-size: 2.5rem; 
+        }
+    }
 
-         hr{
-             width: 100%;
-             height: 4px;
-             background-color: white;
-             margin: 20px 5px;
-             border-radius: 5px;
-         }
-     }
-    
-     .card__nombre{
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         gap: 25px;
-
-         h4{
-             font-size: 1.2;
-         }
-
-         img{
-             width: 40px; height: 40px;
-         }
-     }
-
+    .videos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
+
+@include breakpoint(sm){
+    .trabajos{
+        height: 2100px;
+    }
+}
+
+
+
+
 
 

@@ -24,19 +24,19 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto">
-                    <a class="nav-link" href="../index.html">INICIO</a>
-                    <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
-                    <a class="nav-link" href="../index.html#servicios">SERVICIOS</a>
-                    <a class="nav-link" href="./clientes.html">CLIENTES</a>
-                    <a class="nav-link" href="./contacto.html">CONTACTO</a>
-                </div>
+                <ul class="navbar-nav ms-auto">
+                    <li><a class="nav-link" href="../index.html">INICIO</a></li>
+                    <li><a class="nav-link" href="./nosotros.html">NOSOTROS</a></li>
+                    <li><a class="nav-link" href="./servicios.html">SERVICIOS</a></li>
+                    <li><a class="nav-link" href="./clientes.html">CLIENTES</a></li>
+                    <li><a class="nav-link" href="./contacto.html">CONTACTO</a></li>
+                </ul>
             </div>
         </div>
     </nav>
     
 <!-- CUERPO -->
-
+    <main>
         <section class="container-fluid presentacion3">
             <div class="presentacion3-texto">
                 <h2>NUESTROS
@@ -57,7 +57,6 @@
                 <div class="col-2 d-flex justify-content-center logosclientes">
                     <img src="../img/logo.png" alt="cliente">
                 </div>
-                
                 <div class="col-2 d-flex justify-content-center logosclientes">
                     <img src="../img/logo.png" alt="cliente">
                 </div>
@@ -66,34 +65,32 @@
                 </div>
             </section>
         </section>
-
+    </main>
 
 <!--FOTTER-->   
 
     <footer class="container-fluid footer">
-        <section class="row">
-            <div class="col 12 rowfooter">
-                <div class="nav">
-                    <h2><a href="../index.html">Creative</a></h2>
-                    <nav class="nav2">
-                        <a href="./nosotros.html">Nosotros</a></li>
-                        <a href="../index.html#servicios">Servicios</a></li>
-                        <a href="./clientes.html">Clientes</a></li>
-                        <a href="./contacto.html">Contacto</a></li>
-                    </nav>
+        <div class="row rowfooter">
+            <div class="nav col-12 col-md d-flex flex-column">
+                <h2><a href="../index.html">Creative</a></h2>
+                <ul class="nav2">
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./servicios.html">Servicios</a></li>
+                    <li><a href="./clientes.html">Clientes</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="contactoredes col-12 col-md"> 
+                <div class="contactoredes_telmail">
+                    <p>+54 9 11 ********</p>
+                    <p>mail@gmail.com</p>
                 </div>
-                <div class="contactoredes"> 
-                    <div class="contactoredes_telmail">
-                        <p>+54 9 11 ********</p>
-                        <p>mail@gmail.com</p>
-                    </div>
-                    <div class="contactoredes_links">
-                        <a href="https://www.instagram.com/" target="_blank"><img src="../img/ig.png" alt="instagram"></a>
-                        <a href="https://www.facebook.com/" target="_blank"><img src="../img/face.png" alt="facebook"></a> 
-                    </div>
+                <div class="contactoredes_links">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../img/ig.png" alt="instagram"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="../img/face.png" alt="facebook"></a> 
                 </div>
-            </div> 
-        </section>
+            </div>
+        </div>     
     </footer>
     <script src="../js/bootstrap.js"></script>   
 </body>

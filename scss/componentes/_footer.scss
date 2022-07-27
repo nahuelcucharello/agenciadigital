@@ -10,12 +10,15 @@
 }
 
 .rowfooter{
-    padding: 0px;
+    padding: 15px;
+    margin: 0px 0px 0px 0px;
 }
 
 .nav{
+    padding-top: 10px;
     h2{
         a{
+            padding-left: 30px;
             text-decoration: none;
             list-style: none;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -24,9 +27,6 @@
             -webkit-text-fill-color: transparent;
             text-align: left;
             line-height: 2rem;
-            position: relative;
-            top: 20px;
-            left: 85px;
             font-family: 'Montserrat', sans-serif;
             font-size: 2rem;
             font-weight:600;
@@ -35,45 +35,48 @@
 }
 
 .nav2 {
-    a{
-        text-decoration: none;
+    li{
+        list-style: none;
+        
+        a{
         color: white;
         display: flex;
         flex-direction: column;
         text-align: left;
         line-height: 2rem;
-        position: relative;
-        top: 70px;
-        right: 47px;
         font-family: 'Montserrat', sans-serif;
         font-size: 1.2rem;
         font-weight:400;
         z-index: 1;
+        text-decoration: none;
+
+        }
 
         &:hover{
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            transition: .3s;
         }
     }
 }
 
 .contactoredes{
-    position: relative;
+    padding-top: 50px;
     text-align: end;
     align-content: center;
-    right: 85px;
-    bottom: 60px;
 
     &_telmail{
-        position: relative;
         font-family: 'Montserrat', sans-serif;
         font-size: 1.2rem;
         font-weight:400;
     }
 
     &_links{
+        a{
+            margin: 5px;
+        }
         img {
             width: 25px; height: 25px;
         }
@@ -85,15 +88,16 @@
 
 @media (max-width: 768px){
     .nav2{
-        a{
+        li{
             display: none;
         }
     } 
 
     .nav{
-        position: relative;
-        top: 0px;
         justify-content: center;
+        text-align: center;
+        padding-top: 10px;
+        padding-right: 0px;
 
         h2{
             a{
@@ -103,23 +107,19 @@
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-align: center;
-            top: 0px;
-            left: 0px;
             font-size: 3rem;
+            padding-left: 0px;
             }
         } 
     }
 
     .contactoredes{
-        position: relative;
-        top: 0px;
-        left: 0px;
         justify-content: center;
         text-align: center;
+        padding-top: 0px;
     }
 
     .footer{
-        padding: 20px;
+        padding: 0px;
     }
 }
