@@ -4,12 +4,11 @@
     padding: 0px 0px 0px 0px;
 
     .nav-header{
-        background-color:rgba(0, 0, 0, 0.623);
+        background-color:rgba(0, 0, 0, 0.30);
         padding: 0px 0px 0px 0px;
         height: 9vh;
     }
 }
-
 
 .navbar-brand{
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -17,7 +16,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-family: 'Montserrat', sans-serif;
-        font-size: 3rem;
+        font-size: 2.9rem;
         font-weight: 600;
         text-decoration: none;
         padding-left: 20px;
@@ -29,11 +28,9 @@
 
     
 .nav-link{
-        color: rgb(255, 255, 255);
         font-family: 'Montserrat', sans-serif;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         font-weight: 500;
-        text-decoration: none;
 
         &:hover{
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -44,7 +41,30 @@
         }
     }
 
+@include breakpoint(lg){
+    #navbarNavAltMarkup{
+        background: black;
+    }
 
+    a{
+        .navbar-brand{
+         justify-content: center;
+         margin: 5px;
+         padding: 0px 0px 0px 0px;
+     }  
+     }
+
+     .nav-header{
+        padding: 0px 0px 0px 0px;
+        margin-top: 10px;
+        position: relative;
+        bottom: 26px;
+    }
+
+    .navbar-nav{
+        padding-left: 20px;
+    }
+}
 
 @include breakpoint(md){
    
@@ -59,6 +79,10 @@
     nav{
         .navbar{
             height: 9vh;
+
+            &-nav{
+                padding-left: 20px;
+            }
         }
     }
     
@@ -67,6 +91,11 @@
         margin: 10px 0px;
         position: relative;
         bottom: 26px;
+    }
+
+
+    #navbarNavAltMarkup{
+        background: black;
     }
 
 }

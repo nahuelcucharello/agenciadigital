@@ -13,6 +13,12 @@
         font-size: 4.5rem;
         color: rgb(52, 52, 52);
     }
+    h3{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 1.5rem;
+        text-align: center;
+    }
 }
 
 #card {
@@ -71,11 +77,17 @@
     }
 }
 
-.card__descripcion p{
-    text-align: center;
-    font-weight: 500;
-    font-size: 1.1rem;
-    padding: 20px;
+.card__descripcion{
+    p{
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.1rem;
+        padding: 20px;
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 @include breakpoint(xl){
@@ -86,7 +98,7 @@
 
 @include breakpoint(lg){
     #servicios {
-        height: 120vh;
+        height: 830px;
     }
     #card {
         justify-content: left;
@@ -95,34 +107,34 @@
 
 @include breakpoint(md){
     #servicios {
-         height: 100vh;
+        padding-top: 50px;
+        height: 2100px;
 
         h2{
-             font-size: 3.5rem;
+            font-size: 3.5rem;
+        }
+
+        h3{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            font-size: 1.2rem;
         }
     }
     
     #card {
-        justify-content: left;
-        color: rgb(255, 255, 255);
-        padding-top: 90px;
+        flex-direction: column;
+        align-items: center;
+        color: rgb(74, 74, 74);
+        padding-top: 100px;
+        gap: 40px;
     }
     
     .card__servicio{
-        min-width: 280px; min-height: 380px;
-        padding: 20px 20px 20px 20px;
-        border-radius: 9px;
-        background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        box-shadow: 1px 1px 1px black;
-        align-content: center;
-        align-items: center;
 
-        hr{
-            width: 100%;
-            height: 4px;
-            background-color: white;
-            margin: 20px 5px;
-            border-radius: 5px;
+        &:hover{
+            transition: .3s;
+            background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
         }
     }
     
