@@ -701,7 +701,13 @@ html {
       grid-template-rows: repeat(6, 200px);
       align-items: center;
       justify-content: center;
-      grid-template-areas: "logosclientes1" "logosclientes2" "logosclientes3" "logosclientes4" "logosclientes5" "logosclientes6"; } }
+      grid-template-areas: "logosclientes1" "logosclientes2" "logosclientes3" "logosclientes4" "logosclientes5" "logosclientes6"; }
+    .presentacion3 .logosclientes1 img {
+      position: relative;
+      left: 25px; }
+    .presentacion3 .logosclientes4 img {
+      position: relative;
+      left: 20px; } }
 /* DISEÑO "CONTACTO" */
 .presentacion4 {
   padding: 0px;
